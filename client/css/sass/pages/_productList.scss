@@ -1,0 +1,71 @@
+.section-container {
+  width: $base-width;
+  height: $base-height;
+  .dropdown-container {
+    height: 5%;
+    #categorie-select {
+      width: $base-width;
+      height: $base-height;
+      font-size: 15px;
+      background-color: rgb(175, 55, 88);
+      color: white;
+      outline: none;
+    }
+  }
+  .product-list-container {
+    width: $base-width;
+    height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .product-wrapper {
+      width: 95%;
+      height: 30%;
+      background-color: rgb(254, 251, 252);
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-bottom: dashed;
+      border-bottom-color: rgb(240, 240, 240);
+      .name-block {
+        width: $base-width;
+        height: 15%;
+        font-size: 12px;
+      }
+      .image-block {
+        width: 45%;
+        height: 85%;
+      }
+      .info-block {
+        width: 55%;
+        height: 85%;
+
+        .description {
+          width: $base-width;
+          height: 60%;
+          font-size: 12px;
+          overflow: auto;
+          background-color: #f1f0f0;
+          white-space: normal;
+          box-sizing: border-box;
+          padding: 12px;
+        }
+        .buy-btn {
+          width: $base-width;
+          height: 40%;
+          text-align: center;
+          padding-top: 20px;
+
+          button {
+            max-width: 175px;
+            border: none;
+            background-color: $primary-btn-color;
+            color: #ffffff;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}

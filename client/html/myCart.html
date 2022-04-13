@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabka Bazaar</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/myCart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container cart-header-container row">
+        <nav class="nav-logo">
+          <a href="./index.html">
+            <img src="../../static/images/logo.png" alt="Sabka bazaar logo" />
+          </a>
+        </nav>
+        <nav class="nav-cart">
+          <a href="">
+            <img src="../../static/images/cart-mobile.svg" alt="cart svg" />
+          </a>
+          <p id="nav-cart-count">0 items</p>
+        </nav>
+      </header>
+      <main class="cart-main-container">
+        <article class="cart-article-container">
+          <section id="cart-list-section" class="cart-section-container">
+            <div class="cart-container">
+              <div id="cart-item-header" class="cart-header">
+                <p><strong id="item-count">My Cart (0 items)</strong></p>
+              </div>
+              <div id="cart" class="list-container">
+                <!-- cart items -->
+              </div>
+              <div id="low-price-img" class="low-price-wrapper">
+                <img
+                  src="../../static/images/lowest-price.png"
+                  alt="lowest price guranteed"
+                />
+                <p>You won't find it cheaper anywhere</p>
+              </div>
+            </div>
+          </section>
+          <section id="empty-cart" class="empty-section-container">
+            <div class="no-item-text">
+              <p><strong>No items in your cart</strong></p>
+              <p>Your favorite items are just a click away</p>
+            </div>
+          </section>
+        </article>
+      </main>
+      <footer id="checkout" class="cart-footer">
+        <div id="checkout-block" class="checkout-wrapper">
+          <div class="promo-text-wrapper">
+            <p>Promo code can be applied on payment page</p>
+          </div>
+          <div class="checkout-btn-wrapper">
+            <button>
+              <span id="checkout-btn">Proceed to Checkout</span>
+              <span id="pay-arrow">&#65310;</span>
+            </button>
+          </div>
+        </div>
+        <div id="footer-shopping-block" class="shopping-wrapper">
+          <div class="shopping-btn-wrapper">
+            <a href="./index.html"><button>Start Shopping</button></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../js/myCart.js"></script>
+  </body>
+</html>
